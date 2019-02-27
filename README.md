@@ -1,3 +1,3 @@
 # DECAGON CHAIN
 
-Decagon Chain is a cryptocurrency exchange.
+Decagon Chain is a
