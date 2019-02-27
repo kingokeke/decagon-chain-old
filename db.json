@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "first name": "Izuhukwu",
+      "last name": "Ogbodo",
+      "gender": "M",
+      "user name": "solomon",
+      "password": "softpro",
+      "id": 1
+    },
+    {
+      "first name": "Kingsley",
+      "last name": "Okeke",
+      "gender": "F",
+      "user name": "king",
+      "password": "king",
+      "id": 2
+    }
+  ]
+}
