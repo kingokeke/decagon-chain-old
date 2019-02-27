@@ -18,22 +18,15 @@
     <form class="form-default" action=" http://localhost:3000/students" id="student">
 
         <div class="form-group">
-            <label for="fname">First Name</label>
-            <input required type="text" id="fname" placeholder="Enter First name" class="form-control">
+            <label for="uname">Username</label>
+            <input required type="text" id="uname" placeholder="Enter Username" class="form-control">
         </div>
-        <div class="form-group" id="lname-div">
-            <label for="lname">Last Name</label>
-            <input required type="text" id="lname" placeholder="Enter Last name" class="form-control">
-        </div>
-        <div id="form-group">
-            <select name="level" id="level" class="form-control">
-                <option value="">Select level</option>
-                <option value="Junior">Junior</option>
-                <option value="Senior">Senior</option>
-            </select>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input required type="text" id="pwd" placeholder="Enter Password" class="form-control">
         </div>
 
-        <button type="submit" class="btn btn-default" id="add">Add</button>
+        <button type="submit" class="btn btn-default" id="login">Login</button>
 
     </form>
     <p id="result"> </p>
