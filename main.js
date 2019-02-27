@@ -1,5 +1,5 @@
 $(document).ready(() => {
-
+  /**SIGN UP BUTTON ACTION */
   $('#add').on({
     mouseenter: function () {
       $(this).css("background-color", "yellow");
@@ -13,9 +13,9 @@ $(document).ready(() => {
       var fname = $('#fname').val();
       var lname = $('#lname').val();
       var uname = $('#uname').val();
-      var gender = $('#gender').val();
       var pwd = $('#pwd').val();
       var repeatpwd = $('#re-pwd').val();
+      var gender = $('#gender').val();
 
       var data = {};
 
@@ -40,5 +40,26 @@ $(document).ready(() => {
         swal("oops!", "Please all felds are requird!", "warning");
       }
     }
+  });
+  /**LOGIN BUTTON ACTION */
+  $('#login').on('click', (e) => {
+    e.preventDefault();
+    var uname = $('#uname').val();
+    var pwd = $('#pwd').val();
+    if (uname && pwd) {
+      $.ajax({
+        url: "http://localhost:3000/users/",
+        type: "GET",
+        data: data,
+        success: function (e) {
+          //TODO make a link to the login page for successful signup
+          swal("Successful!", "Your account was created, Please login!", "success");
+
+        }
+      });
+    } else {
+      swal("oops!", "Please all felds are requird!", "warning");
+    }
+
   });
 });
