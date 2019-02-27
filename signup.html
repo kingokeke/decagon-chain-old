@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </link>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <p>SIGNUP TO DECAGON CHAIN</p>
+    <form action=" http://localhost:3000/users">
+
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input required type="text" id="fname" placeholder="Enter First name" class="form-control">
+        </div>
+        <div class="form-group" id="lname-div">
+            <label for="lname">Last Name</label>
+            <input required type="text" id="lname" placeholder="Enter Last name" class="form-control">
+        </div>
+        <div class="form-group" id="uname-div">
+            <label for="uname">User Name</label>
+            <input required type="text" id="uname" placeholder="Enter User name" class="form-control">
+        </div>
+        <div class="form-group" id="pwd-div">
+            <label for="pwd">Enter Password</label>
+            <input required type="password" id="pwd" placeholder="Enter Password" class="form-control">
+        </div>
+        <div class="form-group" id="re-pwd-div">
+            <label for="re-pwd">Repeat Password</label>
+            <input required type="password" id="re-pwd" placeholder="Repeat Password" class="form-control">
+        </div>
+        <div id="form-group">
+            <select name="gender" id="gender" class="form-control">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-default" id="add">Add</button>
+
+    </form>
+    <p id="result"> </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
