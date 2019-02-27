@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </link>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <p>LOGIN TO DECAGON CHAIN</p>
+    <form class="form-default" action=" http://localhost:3000/students" id="student">
+
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input required type="text" id="fname" placeholder="Enter First name" class="form-control">
+        </div>
+        <div class="form-group" id="lname-div">
+            <label for="lname">Last Name</label>
+            <input required type="text" id="lname" placeholder="Enter Last name" class="form-control">
+        </div>
+        <div id="form-group">
+            <select name="level" id="level" class="form-control">
+                <option value="">Select level</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-default" id="add">Add</button>
+
+    </form>
+    <p id="result"> </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
